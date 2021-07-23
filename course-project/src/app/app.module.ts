@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 import { HeaderComponent } from './Header/header.component';
 import { RecipeDetailComponent } from './Header/RecipeBook/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './Header/RecipeBook/recipes/recipe-list/recipe-item/recipe-item.component';
@@ -15,6 +16,7 @@ import { ShoppingListComponent } from './Header/ShoppingList/shopping-list/shopp
 @NgModule({
   declarations: [
     AppComponent,
+    DropdownDirective,
     HeaderComponent,
     RecipesComponent,
     RecipeListComponent,
