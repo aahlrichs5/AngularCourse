@@ -12,6 +12,7 @@ import { RecipesComponent } from './Header/RecipeBook/recipes/recipes.component'
 import { IngredientComponent } from './Header/ShoppingList/ingredient/ingredient.component';
 import { ShoppingEditComponent } from './Header/ShoppingList/shopping-edit/shopping-edit.component';
 import { ShoppingListComponent } from './Header/ShoppingList/shopping-list/shopping-list.component';
+import { ShoppingListService } from './Header/ShoppingList/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ShoppingListComponent } from './Header/ShoppingList/shopping-list/shopp
     ShoppingListComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
